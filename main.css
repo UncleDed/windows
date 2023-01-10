@@ -7,8 +7,11 @@
     font-family: 'Rubik', sans-serif;
   }
 }
-
-@apply .flexaing {
-  justify-content: space-around;
-  display: flex;
+.window-active{
+  border-width: 4px;
+  border-radius: 3px;
+  border-color: rgb(59 130 246);
+}
+.window-active .check-mark{
+  display: block !important;
 }
