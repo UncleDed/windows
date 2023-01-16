@@ -10,52 +10,69 @@
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css' />
         <title>DECCO Windows</title>
     </head>
-    <body>
+    <body class="font-rubik">
         <div class="text-center text-zinc-700">
             <!-- HEADER -->
             <div class="shadow-xl w-full flex">
                 <a href="./window-configurator.html">
-                    <div class="justify-center bg-zinc-800 h-[30px] sm:h-[40px] md:h-[50px] lg:h-[61px]">
+                    <div class="justify-center bg-[#333333] h-[30px] sm:h-[40px] md:h-[50px] lg:h-[61px]">
                         <img class="h-full" src="img/logo.png">
                     </div>
                 </a>
             </div>
-            <div class="mx-3 mt-4 lg:mx-5 lg:mt-8">
+            <div class="hidden md:block mx-3 mt-4 lg:mx-5 lg:mt-8">
                 <!-- PAGINATION -->
-                <div class="flex items-center mt-4 text-zinc-500 text-xs lg:text-base font-medium">
-                    <a class="mr-3" href="#">Home</a>
-                    <i class="fa fa-angle-right text-2xl"></i>
-                    <a class="ml-3 mr-3" href="#">Configurator</a>
-                    <i class="fa fa-angle-right text-2xl"></i>
-                    <a class="ml-3 mr-3" href="#">Choose your window</a>
-                    <i class="fa fa-angle-right text-2xl"></i>
-                    <a class="ml-3 mr-3" href="#">Window configurator</a>
-                </div>
+                <nav class="flex mt-4 text-[#848484]" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                        <li class="inline-flex items-center">
+                            <a href="#" class="inline-flex items-center text-sm font-medium hover:text-blue-600">Home
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <a href="#" class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2">Konfigurator</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <a href="#" class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2">Rodzaj Okna</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <a href="#" class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2">Konfigurator Okna</a>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
                 <!-- TITLE -->
-                <h1 class="text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-normal text-zinc-700 mt-2 md:mt-6">
-                    <span class="text-[#FFA011] font-bold">Set up</span> your Single-Hung Window
+                <h1 class="text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[46px] font-normal text-[#323232] mt-2 md:mt-6">
+                    <span class="font-bold text-[#FFA011]">Configure</span> your Single-Hung Window
                 </h1>
             </div>
             <!-- CONTENT -->
-            <div class="block md:flex m-5 md:mt-12">
-                <div class="w-full md:w-1/2 lg:w-1/3 rounded-b mb-10 md:pr-10 ">
+            <div class="gap-8 sm:flex m-5 md:mt-12">
+                <div class=" w-full sm:min-w-[280px] sm:w-[350px] mx-auto rounded-b mb-10">
                     <div class="bg-zinc-50 shadow-xl text-sm block">
-                        <p class="bg-zinc-700 px-4 py-2 font-medium text-lg text-white text-left rounded-t">
+                        <p class="bg-[#404040] px-4 py-2 font-semibold text-lg text-white text-left rounded-t">
                             YOUR CONFIGURATION
                         </p>
                         <div class="px-4 py-5">
                             <div class="w-full mb-3 mt-2">
                                 <img class="w-full" src="img/left-bord.png">
                             </div>
-                            <div class="flex pb-2">
-                                <button class="w-1/2 bg-[#FFA011] mr-4 py-3 font-medium text-lg text-white rounded">
+                            <div class="grid grid-cols-2 gap-4 font-base">
+                                <button class="w-full bg-[#FFA011] mr-4 py-3 text-sm text-white rounded">
                                     Interior View
                                 </button>
-                                <button class="w-1/2 bg-[#FFA011] py-3 font-medium text-lg text-white rounded">
+                                <button class="w-full bg-[#FFA011] py-3 text-sm text-white rounded">
                                     Exterior View
                                 </button>
                             </div>
-                            <div class="text-xl md:leading-12">
+                            <div class="text-sm leading-18 md:leading-12">
                                 <div class="grid grid-cols-2 pt-2 pb-2">
                                     <div class="text-left">Quantity:</div>
                                     <div class="text-right">1</div>
@@ -70,64 +87,72 @@
                                 </div>
                                 <div class="grid grid-cols-2 pt-2 pb-2">
                                     <div class="text-left">Construction color:</div>
-                                    <div class="text-right">White</div>
+                                    <div class="text-right">Beige <span class="font-bold">(+ 9$)</span></div>
                                 </div>
                                 <div class="grid grid-cols-2 pt-2 pb-2">
                                     <div class="text-left">Window fittings color:</div>
-                                    <div class="text-right">White</div>
+                                    <div class="text-right">Beige <span class="font-bold">(+ 9$)</span></div>
                                 </div>
                                 <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Glazing unit:</div>
-                                    <div class="text-right">Low emission</div>
-                                </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Glazing bars:</div>
-                                    <div class="text-right">Prarie</div>
-                                </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Window screen:</div>
+                                    <div class="text-left">Comfort stop:</div>
                                     <div class="text-right">Yes</div>
                                 </div>
                                 <div class="grid grid-cols-2 pt-2 pb-2">
+                                    <div class="text-left">Glass package:</div>
+                                    <div class="text-right">Low emission</div>
+                                </div>
+                                <div class="grid grid-cols-2 pt-2 pb-2">
+                                    <div class="text-left">Gallons:</div>
+                                    <div class="text-right">Lack</div>
+                                </div>
+                                <div class="grid grid-cols-2 pt-2 pb-2">
+                                    <div class="text-left">Window screen:</div>
+                                    <div class="text-right">Beige <span class="font-bold">(+ 3$)</span></div>
+                                </div>
+                                <div class="grid grid-cols-2 pt-2 pb-2">
                                     <div class="text-left">Instalation option:</div>
-                                    <div class="text-right mb-3">New construction</div>
+                                    <div class="text-right">New construction</div>
+                                </div>
+                                <div class="grid grid-cols-2 pt-2 pb-2 mb-3">
+                                    <div class="text-left">XYZ Special Profile</div>
+                                    <div class="text-right">10000mm <span class="font-bold">(+ 90$)</span></div>
                                 </div>
                             </div>
                             <hr class="border-zinc-400">
                             <div class="py-4">
-                                <div class="grid grid-cols-2 text-2xl md:text-3xl xl:text-4xl">
+                                <div class="grid grid-cols-2 text-2xl ">
                                     <div class="font-bold text-left">Price:</div>
                                     <div class="font-bold text-right">$ 222,00</div>
                                 </div>
-                                <button class="w-full py-4 bg-[#FFA011] font-medium text-2xl text-white rounded mt-8">Go To Summary</button>
+                                <button class="w-full py-4 bg-[#FFA011] font-semibold text-base text-white rounded mt-8">Go To Summary</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 lg:w-2/3">
+                <div class="flex-auto">
                     <div class="block text-left font-medium rounded-b bg-zinc-50 shadow-xl">
-                        <p class="bg-zinc-700 px-4 py-2 text-xs md:text-lg text-white rounded-t">
+                        <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             SIZE
                         </p>
-                        <div class="grid grid-cols-3 text-zinc-700 text-left text-lg px-4 py-5 mb-12 focus:border-blue-500">
+                        <div class="grid grid-cols-3 text-zinc-700 text-left text-base px-4 py-5 mb-12 focus:border-blue-500">
                             <div class="p-2">
                                 <p class="font-bold">Width</p>
-                                <input class="w-full border-2 rounded-sm mt-3 p-3 bg-zinc-50 focus:outline-none focus:border-blue-500" name="#" type="text" value="31 1/2"/>
+                                <input class="w-full border-2 rounded-sm mt-3 text-sm p-3 bg-zinc-50 focus:outline-none focus:border-blue-600" name="#" type="text" value="31 1/2"/>
                             </div>
                             <div class="p-2">
                                 <p class="font-bold">Height</p>
-                                <input class="w-full border-2 rounded-sm mt-3 p-3 bg-zinc-50 focus:outline-none focus:border-blue-500" name="#" type="text" value="45 1/2" />
+                                <input class="w-full border-2 rounded-sm mt-3 text-sm p-3 bg-zinc-50 focus:outline-none focus:border-blue-600" name="#" type="text" value="45 1/2" />
                             </div>
                             <div class="p-2">
                                 <p class="font-bold">Quantity</p>
-                                <input class="w-full border-2 rounded-sm mt-3 p-3 bg-zinc-50 focus:outline-none focus:border-blue-500" name="#" type="text" value="1" />
+                                <input class="w-full border-2 rounded-sm mt-3 text-sm p-3 bg-zinc-50 focus:outline-none focus:border-blue-600" name="#" type="text" value="1" />
                             </div>
                         </div>
                     </div>
 
                     <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
-                        <p class="bg-zinc-700 px-4 py-2 text-xs md:text-lg text-white rounded-t">
+                        <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             CONSTRUCTION COLOR
                         </p>
                         <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
@@ -136,7 +161,7 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 font-bold pb-11 sm:text-lg lg:text-xl">White</p>
+                                    <p class="p-2 pb-11 p-2 font-bold text-sm">White</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute -right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -147,9 +172,9 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <div class="p-2">
-                                        <p class="pb-2 font-bold sm:text-lg lg:text-xl">Beige</p>
-                                        <button class="w-full h-[35px] sm:h-[29px] bg-[#404040] sm:bg-[#FFA011] text-white rounded font-[14px]">
+                                    <div class="">
+                                        <p class="p-2 pb-[15px] font-bold text-sm">Beige</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -163,9 +188,9 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <div class="p-2">
-                                        <p class=" pb-2 font-bold sm:text-lg lg:text-xl">Black</p>
-                                        <button class="w-full h-[35px] sm:h-[29px] bg-[#404040] sm:bg-[#FFA011] text-white rounded font-[14px]">
+                                    <div class="">
+                                        <p class="p-2 pb-[15px] font-bold text-sm">Black</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -178,7 +203,7 @@
                     </div>
 
                     <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
-                        <p class="bg-zinc-700 px-4 py-2 text-xs md:text-lg text-white rounded-t">
+                        <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             WINDOW FITTING COLOR
                         </p>
                         <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
@@ -187,7 +212,7 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold sm:text-lg lg:text-xl">White</p>
+                                    <p class="p-2 pb-11 p-2 font-bold text-sm">White</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -198,9 +223,9 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <div class="p-2">
-                                        <p class="pb-2 font-bold sm:text-lg lg:text-xl">Beige</p>
-                                        <button class="w-full h-[35px] sm:h-[29px] bg-[#404040] sm:bg-[#FFA011] text-white rounded font-[14px]">
+                                    <div class="">
+                                        <p class="p-2 pb-[15px] font-bold text-sm">Beige</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -214,9 +239,9 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <div class="p-2">
-                                        <p class=" pb-2 font-bold sm:text-lg lg:text-xl">Black</p>
-                                        <button class="w-full h-[35px] sm:h-[29px] bg-[#404040] sm:bg-[#FFA011] text-white rounded font-[14px]">
+                                    <div class="">
+                                        <p class="p-2 pb-[15px] font-bold text-sm">Black</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -229,7 +254,7 @@
                     </div>
 
                     <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
-                        <p class="bg-zinc-700 px-4 py-2 text-xs md:text-lg text-white rounded-t">
+                        <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             COMFORT STOP
                         </p>
                         <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
@@ -238,7 +263,7 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 font-bold pb-11 sm:text-lg lg:text-xl">Yes</p>
+                                    <p class="p-2 pb-11 font-bold text-sm">Yes</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -249,7 +274,7 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 font-bold pb-11 sm:text-lg lg:text-xl">No</p>
+                                    <p class="p-2 pb-11 font-bold text-sm">No</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -259,7 +284,7 @@
                     </div>
 
                     <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
-                        <p class="bg-zinc-700 px-4 py-2 text-xs md:text-lg text-white rounded-t">
+                        <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             GLASS PACKAGE
                         </p>
                         <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
@@ -268,7 +293,7 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold sm:text-lg lg:text-xl">Low emission</p>
+                                    <p class="p-2 pb-11 font-bold text-sm">Low emission</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -279,9 +304,9 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <div class="p-2">
-                                        <p class="pb-2 font-bold sm:text-lg lg:text-xl">One side hardened</p>
-                                        <button class="w-full h-[35px] sm:h-[29px] bg-[#404040] sm:bg-[#FFA011] text-white rounded font-[14px]">
+                                    <div class="">
+                                        <p class="p-2 pb-[15px] font-bold text-sm">One side hardened</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -295,9 +320,9 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <div class="p-2">
-                                        <p class=" pb-2 font-bold sm:text-lg lg:text-xl">Hardened on both sides</p>
-                                        <button class="w-full h-[35px] sm:h-[29px] bg-[#404040] sm:bg-[#FFA011] text-white rounded font-[14px]">
+                                    <div class="">
+                                        <p class="p-2 pb-[15px] font-bold text-sm">Hardened on both sides</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -311,9 +336,9 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <div class="p-2">
-                                        <p class="pb-2 font-bold sm:text-lg lg:text-xl">Laminated glass</p>
-                                        <button class="w-full h-[35px] sm:h-[29px] bg-[#404040] sm:bg-[#FFA011] text-white rounded font-[14px]">
+                                    <div class="">
+                                        <p class="p-2 pb-[15px] font-bold text-sm">Laminated glass</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -327,9 +352,9 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <div class="p-2">
-                                        <p class=" pb-2 font-bold sm:text-lg lg:text-xl">Selective</p>
-                                        <button class="w-full h-[35px] sm:h-[29px] bg-[#404040] sm:bg-[#FFA011] text-white rounded font-[14px]">
+                                    <div class="">
+                                        <p class="p-2 pb-[15px] font-bold text-sm">Selective</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -339,13 +364,13 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="px-3 pb-5 text-lg font-normal">
-                            <span class="font-bold">Sczegoty</span> i opis zaznaczonej opcji - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia consectetur pariatur amet quo aspernatur ipsa perferendis aliquam.
+                        <p class="px-3 pb-5 text-base font-normal">
+                            <span class="font-bold">Details</span> and description of the selected option - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                     </div>
 
                     <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
-                        <p class="bg-zinc-700 px-4 py-2 text-xs md:text-lg text-white rounded-t">
+                        <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             GALLONS
                         </p>
                         <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
@@ -354,7 +379,7 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold sm:text-lg lg:text-xl">None</p>
+                                    <p class="p-2 pb-11 font-bold text-sm">None</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -365,9 +390,9 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <div class="p-2">
-                                        <p class="pb-2 font-bold sm:text-lg lg:text-xl">Traditional</p>
-                                        <button class="w-full h-[35px] sm:h-[29px] bg-[#404040] sm:bg-[#FFA011] text-white rounded font-[14px]">
+                                    <div class="">
+                                        <p class="p-2 pb-[15px] font-bold text-sm">Traditional</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -381,9 +406,9 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <div class="p-2">
-                                        <p class=" pb-2 font-bold sm:text-lg lg:text-xl">Toprow</p>
-                                        <button class="w-full h-[35px] sm:h-[29px] bg-[#404040] sm:bg-[#FFA011] text-white rounded font-[14px]">
+                                    <div class="">
+                                        <p class="p-2 pb-[15px] font-bold text-sm">Toprow</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -396,7 +421,7 @@
                     </div>
 
                     <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
-                        <p class="bg-zinc-700 px-4 py-2 text-xs md:text-lg text-white rounded-t">
+                        <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             WINDOW SCREEN
                         </p>
                         <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
@@ -405,9 +430,9 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <div class="p-2">
-                                        <p class="pb-2 font-bold sm:text-lg lg:text-xl">Yes</p>
-                                        <button class="w-full h-[35px] sm:h-[29px] bg-[#404040] sm:bg-[#FFA011] text-white rounded font-[14px]">
+                                    <div class="">
+                                        <p class="p-2 pb-[15px] font-bold text-sm">Yes</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -421,7 +446,7 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold sm:text-lg lg:text-xl">No</p>
+                                    <p class="p-2 pb-11 font-bold text-sm">No</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -431,7 +456,7 @@
                     </div>
 
                     <div class="block font-medium text-left rounded-b bg-zinc-50 shadow-xl">
-                        <p class="bg-zinc-700 px-4 py-2 text-xs md:text-lg text-white rounded-t">
+                        <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             INSTALLATION OPTION
                         </p>
                         <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
@@ -440,7 +465,7 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold sm:text-lg lg:text-xl">New construction</p>
+                                    <p class="p-2 pb-11 font-bold text-sm">New construction</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -451,7 +476,7 @@
                                     <div class="relative">
                                         <img class="w-full md:w-[176px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold sm:text-lg lg:text-xl">Replacement</p>
+                                    <p class="p-2 pb-11 font-bold text-sm">Replacement</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -461,11 +486,34 @@
                     </div>
 
                     <div class="block text-left font-medium rounded-b bg-zinc-50 shadow-xl">
-                        <p class="bg-zinc-700 px-4 py-2 text-xs md:text-lg text-white rounded-t">
+                        <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             SPECIAL PROFILE
                         </p>
-                        <div class="flex text-xs md:text-sm leading-5 relative">
-                            <button class="px-4 py-2 m-5 bg-[#FFA011] font-medium text-lg text-white rounded">Add a special profile</button>
+                        <div class="w-full bg-white flex text-[#333333]">
+                            <div class="p-5 px-3">
+                                <div class="w-full lg:flex justify-between items-end gap-5">
+                                    <div>
+                                        <button class="inline-flex justify-between w-80 border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                            <p>XYZ SPECIAL PROFILE <span class="font-bold">(+$ 99.99)</span></p>
+                                            <svg class="w-5 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="py-5 lg:py-0">
+                                        <label class="block mb-2 text-base font-medium text-[#333333]">Length</label>
+                                        <input type="text" id="length" class="border text-[#333333] w-fit text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" value="10000mm" required>
+                                    </div>
+                                    <div class="flex lg:justify-between items-center gap-4">
+                                        <button class="bg-[#FFA011] text-white rounded text-2xl font-semibold h-9 px-3">-</button>
+                                        <p class="text-base font-medium text-[#333333]">1</p>
+                                        <button class="bg-[#FFA011] text-white rounded text-2xl font-semibold h-9 px-3">+</button>
+                                        <button><img  class="bg-[#EEEEEE] p-3 rounded text-[#BDBDBD]" src="img/trash.svg"></button>
+                                    </div>
+                                </div>
+                                <p class="text-sm font-normal my-6">The color of the special profile will be the same as the color of the structure. (White)</p>
+                                <button class="bg-[#FFA011] text-white rounded text-base font-semibold p-4">Add a special profile</button>
+                            </div>
                         </div>
                     </div>
 
