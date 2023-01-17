@@ -11,25 +11,40 @@
         <title>DECCO Windows</title>
     </head>
     <body>
-        <div class="text-center text-zinc-700">
+        <div class="text-center text-[#333333] .font-rubik">
             <!-- HEADER -->
-            <div class="shadow-lg">
-                <div class="justify-center flex bg-zinc-800 w-44 h-20">
-                    <img class="m-auto" src="img/Group.png">
-                </div>
+            <div class="shadow-xl w-full flex">
+                <a href="./window-configurator.html">
+                    <div class="justify-center bg-[#333333] h-[30px] sm:h-[40px] md:h-[50px] lg:h-[61px]">
+                        <img class="h-full" src="img/logo.png">
+                    </div>
+                </a>
             </div>
-            <div class="mx-5 mt-8">
+            <div class="hidden md:block mx-3 mt-4 lg:mx-5 lg:mt-8">
                 <!-- PAGINATION -->
-                <div class="flex items-center mt-4 text-zinc-500 text-base font-medium">
-                    <a class="mr-3" href="#">Home</a>
-                    <i class="fa fa-angle-right text-2xl"></i>
-                    <a class="ml-3 mr-3" href="#">Configurator</a>
-                    <i class="fa fa-angle-right text-2xl"></i>
-                    <a class="ml-3 mr-3" href="#">Window type</a>
-                </div>
+                <nav class="flex mt-4 text-[#848484]" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                        <li class="inline-flex items-center">
+                            <a href="#" class="inline-flex items-center text-sm font-medium hover:text-blue-600">Home
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <a href="#" class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2">Configurator</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <a href="#" class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2">Window type</a>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
                 <!-- TITLE -->
-                <h1 class="text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-normal text-zinc-700 mt-2 md: mt-6">
-                    <span class="text-orange-400 font-bold">Choose</span> the type of window
+                <h1 class="text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[46px] font-normal text-[#323232] mt-2 md:mt-6">
+                    <span class="font-bold text-[#FFA011]">Choose</span> The Type Of Window
                 </h1>
             </div>
             <!-- CONTENT -->
@@ -40,7 +55,7 @@
                             <div class="window-active relative">
                                 <div class="window-border w-full shadow-lg rounded mb-3 h-px-150 relative cursor-pointer">
                                     <div class="relative w-full h-4/5 overflow-hidden">
-                                        <img class="w-full" src="img/rectangle_120.png">
+                                        <img class="w-full" src="img/window5.svg">
                                     </div>
                                     <p class="p-3 sm:text-lg lg:text-2xl">Single-Hung</p>
                                 </div>
@@ -53,7 +68,7 @@
                             <div class="relative">
                                 <div class="window-border w-full shadow-lg rounded mb-3 relative cursor-pointer">
                                     <div class="relative w-full h-4/5 overflow-hidden">
-                                        <img class="w-full" src="img/window1.jpg">
+                                        <img class="w-full" src="img/window5.svg">
                                     </div>
                                     <p class="p-3 sm:text-lg lg:text-2xl truncate">Double-Hung</p>
                                 </div>
@@ -66,9 +81,9 @@
                             <div class="relative">
                                 <div class="window-border w-full shadow-lg rounded mb-3 relative cursor-pointer">
                                     <div class="relative w-full h-4/5 overflow-hidden">
-                                        <img class="w-full" src="img/window1.jpg">
+                                        <img class="w-full" src="img/window5.svg">
                                     </div>
-                                    <p class="p-3 sm:text-lg lg:text-2xl truncate">Double-Hung</p>
+                                    <p class="p-3 sm:text-lg lg:text-2xl truncate">Double Slide</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute -right-3 -top-3 w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -79,9 +94,9 @@
                             <div class="relative">
                                 <div class="window-border w-full shadow-lg rounded mb-3 relative cursor-pointer">
                                     <div class="relative w-full h-4/5 overflow-hidden">
-                                        <img class="w-full" src="img/window1.jpg">
+                                        <img class="w-full" src="img/window5.svg">
                                     </div>
-                                    <p class="p-3 sm:text-lg lg:text-2xl truncate">Double-Hung</p>
+                                    <p class="p-3 sm:text-lg lg:text-2xl truncate">Casement</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute -right-3 -top-3 w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -92,9 +107,9 @@
                             <div class="relative">
                                 <div class="window-border w-full shadow-lg rounded mb-3 relative cursor-pointer">
                                     <div class="relative w-full h-4/5 overflow-hidden">
-                                        <img class="w-full" src="img/window1.jpg">
+                                        <img class="w-full" src="img/window5.svg">
                                     </div>
-                                    <p class="p-3 sm:text-lg lg:text-2xl truncate">Double-Hung</p>
+                                    <p class="p-3 sm:text-lg lg:text-2xl truncate">Awning</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute -right-3 -top-3 w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -105,9 +120,9 @@
                             <div class="relative">
                                 <div class="window-border w-full shadow-lg rounded mb-3 relative cursor-pointer">
                                     <div class="relative w-full h-4/5 overflow-hidden">
-                                        <img class="w-full" src="img/window1.jpg">
+                                        <img class="w-full" src="img/window5.svg">
                                     </div>
-                                    <p class="p-3 sm:text-lg lg:text-2xl truncate">Double-Hung</p>
+                                    <p class="p-3 sm:text-lg lg:text-2xl truncate">Patio Door</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute -right-3 -top-3 w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -118,9 +133,9 @@
                             <div class="relative">
                                 <div class="window-border w-full shadow-lg rounded mb-3 relative cursor-pointer">
                                     <div class="relative w-full h-4/5 overflow-hidden">
-                                        <img class="w-full" src="img/window1.jpg">
+                                        <img class="w-full" src="img/window5.svg">
                                     </div>
-                                    <p class="p-3 sm:text-lg lg:text-2xl truncate">Double-Hung</p>
+                                    <p class="p-3 sm:text-lg lg:text-2xl truncate">Picture Window </p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute -right-3 -top-3 w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
