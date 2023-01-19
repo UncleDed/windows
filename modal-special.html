@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="output.css" rel="stylesheet">
+        <title>DECCO</title>    
+    </head>
+    <body class="font-rubik">
+        <div class="w-auto max-w-[700px] m-auto shadow-md p-6 rounded-lg bg-white">
+            <div class="flex justify-between items-center">
+                <p class="font-bold text-[24px]">Special profile</p>
+                <img src="img/multi.svg" />
+            </div>
+            <div class="block sm:flex justify-start items-end gap-4 mt-3">
+                <div class="grid grid-cols-2 gap-4 sm:flex">
+                    <div class="grid grid-cols-1">
+                        <label for="profile-input" class="font-semibold text-[16px]">Select a profile</label>
+                        <input id="profile-input" type="text" class="border rounded-sm h-[50px] p-3 mt-2" value="XYZ SPECIAL PROFILE">
+                    </div>
+                    <div class="grid grid-cols-1">
+                        <label for="length-input" class="font-semibold text-[16px]">Length</label>
+                        <input id="length-input" type="text" class="w-full sm:w-[124px] h-[50px] border rounded-sm p-3 mt-2" value="0">
+                    </div>
+                </div>  
+                <div class="grid grid-cols-2 gap-4 sm:flex">                  
+                    <div class="grid grid-cols-1">
+                        <label class="font-semibold text-[16px]">Color</label>
+                        <select class="appearance-none bg-no-repeat bg-[calc(100%-6px)] bg-[length:25px] w-full sm:w-[100px] border rounded-sm h-[50px] p-3 mt-2" style="background-image: url(img/chevron-down.svg);" aria-label="Default select example">
+                            <option>White</option>
+                            <option>Black</option>
+                        </select>
+                    </div>
+                    <div class="flex w-[165px] justify-start sm:justify-between items-end gap-4 mb-[7px]">
+                        <button class="w-9 h-9 bg-[#FFA011] rounded text-white text-4xl font-lite justify-center items-center flex">&minus;</button>
+                        <p class="text-[20px] mb-[7px] font-medium">1</p>
+                        <button class="w-9 h-9 bg-[#FFA011] rounded text-white text-4xl font-lite justify-center items-center flex">&plus;</button>
+                        <button class="w-9 h-9"><img  class="bg-[#EEEEEE] p-3 rounded text-[#BDBDBD]" src="img/trash.svg"></button>
+                    </div>
+                </div>
+            </div>
+            <button class="w-[150px] h-[48px] text-[14px] rounded bg-[#FFA011] text-white mt-4">Add special profile</button>
+        </div>
+    </body>
+</html>
