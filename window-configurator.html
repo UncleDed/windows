@@ -4,23 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css' />
+        <link rel="stylesheet" href="dist/css/app.css">
+        <link rel="stylesheet" href="main.css">
         <title>DECCO Windows</title>
     </head>
-    <body class="font-rubik">
+    <body class="bg-white min-h-[600px] px-0 pt-0">
         <div class="text-center text-zinc-700">
             <!-- HEADER -->
             <div class="shadow-xl w-full flex">
                 <a href="./window-configurator.html">
-                    <div class="justify-center bg-[#333333] h-[30px] sm:h-[40px] md:h-[50px] lg:h-[61px]">
+                    <div class="justify-center bg-[#333333] h-[61px]">
                         <img class="h-full" src="img/logo.png">
                     </div>
                 </a>
             </div>
-            <div class="hidden md:block mx-3 mt-4 lg:mx-5 lg:mt-8">
+            <div class=" mx-3 mt-4 lg:mx-5 lg:mt-8">
                 <!-- PAGINATION -->
                 <nav class="flex mt-4 text-[#848484]" aria-label="Breadcrumb">
                     <ol class="inline-flex items-center space-x-1 md:space-x-3">
@@ -49,132 +49,144 @@
                     </ol>
                 </nav>
                 <!-- TITLE -->
-                <h1 class="text-left text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[46px] font-normal text-[#323232] mt-2 md:mt-6">
-                    <span class="font-bold text-[#FFA011]">Configure</span> your Single-Hung Window
+                <h1 class="text-left text-[23px] sm:text-[36px] md:text-[46px] leading-8 font-normal text-[#323232] mt-2 md:mt-6">
+                    <span class="font-bold text-[#FFA011]">Configure</span> Your Single-Hung Window
                 </h1>
             </div>
             <!-- CONTENT -->
-            <div class="gap-8 sm:flex m-5 md:mt-12">
-                <div class=" w-full sm:min-w-[280px] sm:w-[350px] mx-auto rounded-b mb-10">
-                    <div class="bg-zinc-50 shadow-xl text-sm block">
+            <div class="gap-8 grid grid-cols-12 m-5 md:mt-12">
+                <div class="grid intro-y col-span-12 md:col-span-4 xl:col-span-3 rounded-b mb-10">
+                    <div class="box shadow-xl text-sm h-fit">
                         <p class="bg-[#404040] px-4 py-2 font-semibold text-lg text-white text-left rounded-t">
                             YOUR CONFIGURATION
                         </p>
-                        <div class="px-4 py-5">
-                            <div class="w-full mb-3 mt-2">
-                                <img class="w-full" src="img/left-bord.png">
-                            </div>
-                            <div class="grid grid-cols-2 gap-4 font-base">
-                                <button class="w-full bg-[#FFA011] mr-4 py-3 text-sm text-white rounded">
-                                    Interior View
-                                </button>
-                                <button class="w-full bg-[#FFA011] py-3 text-sm text-white rounded">
-                                    Exterior View
-                                </button>
-                            </div>
-                            <div class="text-sm leading-18 md:leading-12">
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Quantity:</div>
-                                    <div class="text-right">1</div>
+                        <div class="px-4 py-5 bg-[#F9F9F9]">
+                            <div class="block sm:gap-5 sm:flex md:block">
+                                <div>
+                                    <div class="w-full mb-3 mt-2">
+                                        <img class="w-full" src="img/left-bord.png">
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-4 font-base">
+                                        <button class="w-full bg-[#FFA011] mr-4 py-3 text-sm text-white rounded">
+                                            Interior View
+                                        </button>
+                                        <button class="w-full bg-[#FFA011] py-3 text-sm text-white rounded">
+                                            Exterior View
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Height:</div>
-                                    <div class="text-right">45 1/2"</div>
+                                <div>
+                                    <div class="text-sm ">
+                                        <div class="grid grid-cols-2 pt-2 pb-2">
+                                            <div class="text-left">Quantity:</div>
+                                            <div class="text-right">1</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 pt-2 pb-2">
+                                            <div class="text-left">Height:</div>
+                                            <div class="text-right">45 1/2"</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 pt-2 pb-2">
+                                            <div class="text-left">Width:</div>
+                                            <div class="text-right">31 1/2"</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 pt-2 pb-2">
+                                            <div class="text-left">Construction color:</div>
+                                            <div class="text-right">Beige <span class="font-bold">(+ 9$)</span></div>
+                                        </div>
+                                        <div class="grid grid-cols-2 pt-2 pb-2">
+                                            <div class="text-left">Window fittings color:</div>
+                                            <div class="text-right">Beige <span class="font-bold">(+ 9$)</span></div>
+                                        </div>
+                                        <div class="grid grid-cols-2 pt-2 pb-2">
+                                            <div class="text-left">Comfort stop:</div>
+                                            <div class="text-right">Yes</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 pt-2 pb-2">
+                                            <div class="text-left">Glass package:</div>
+                                            <div class="text-right">Low emission</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 pt-2 pb-2">
+                                            <div class="text-left">Gallons:</div>
+                                            <div class="text-right">Lack</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 pt-2 pb-2">
+                                            <div class="text-left">Window screen:</div>
+                                            <div class="text-right">Beige <span class="font-bold">(+ 3$)</span></div>
+                                        </div>
+                                        <div class="grid grid-cols-2 pt-2 pb-2">
+                                            <div class="text-left">Instalation option:</div>
+                                            <div class="text-right">New construction</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 pt-2 pb-2 mb-3">
+                                            <div class="text-left">XYZ Special Profile:</div>
+                                            <div class="text-right">10000mm <span class="font-bold">(+ 90$)</span></div>
+                                        </div>
+                                    </div>
+                                    <hr class="border-zinc-400">
+                                    <div class="py-4">
+                                        <div class="grid grid-cols-2 text-2xl ">
+                                            <div class="font-bold text-left">Price:</div>
+                                            <div class="font-bold text-right">$ 222,00</div>
+                                        </div>
+                                        <button class="w-full py-4 bg-[#FFA011] font-bold text-base text-white rounded mt-8">Go To Summary</button>
+                                    </div>
                                 </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Width:</div>
-                                    <div class="text-right">31 1/2"</div>
-                                </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Construction color:</div>
-                                    <div class="text-right">Beige <span class="font-bold">(+ 9$)</span></div>
-                                </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Window fittings color:</div>
-                                    <div class="text-right">Beige <span class="font-bold">(+ 9$)</span></div>
-                                </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Comfort stop:</div>
-                                    <div class="text-right">Yes</div>
-                                </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Glass package:</div>
-                                    <div class="text-right">Low emission</div>
-                                </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Gallons:</div>
-                                    <div class="text-right">Lack</div>
-                                </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Window screen:</div>
-                                    <div class="text-right">Beige <span class="font-bold">(+ 3$)</span></div>
-                                </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2">
-                                    <div class="text-left">Instalation option:</div>
-                                    <div class="text-right">New construction</div>
-                                </div>
-                                <div class="grid grid-cols-2 pt-2 pb-2 mb-3">
-                                    <div class="text-left">XYZ Special Profile</div>
-                                    <div class="text-right">10000mm <span class="font-bold">(+ 90$)</span></div>
-                                </div>
-                            </div>
-                            <hr class="border-zinc-400">
-                            <div class="py-4">
-                                <div class="grid grid-cols-2 text-2xl ">
-                                    <div class="font-bold text-left">Price:</div>
-                                    <div class="font-bold text-right">$ 222,00</div>
-                                </div>
-                                <button class="w-full py-4 bg-[#FFA011] font-semibold text-base text-white rounded mt-8">Go To Summary</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex-auto">
-                    <div class="block text-left font-medium rounded-b bg-zinc-50 shadow-xl">
+                <div class="grid col-span-12 intro-y md:col-span-8 xl:col-span-9">
+                    <div class="box text-left font-medium rounded-b bg-[#F9F9F9] mb-10 shadow-xl">
                         <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             SIZE
                         </p>
-                        <div class="grid grid-cols-3 text-zinc-700 text-left text-base px-4 py-5 mb-12 focus:border-blue-500">
+                        <div class="grid grid-cols-1 sm:grid-cols-3 text-zinc-700 text-left text-base px-4 py-5 mb-12 focus:border-blue-500">
                             <div class="p-2">
                                 <p class="font-bold">Width</p>
-                                <input class="w-full border-2 rounded-sm mt-3 text-sm p-3 bg-zinc-50 focus:outline-none focus:border-blue-600" name="#" type="text" value="31 1/2"/>
+                                <div class="flex gap-2">
+                                    <input class="w-full border-2 rounded-[3px] mt-3 text-sm p-3 bg-[#F9F9F9] focus:outline-none focus:border-blue-600" name="#" type="text" value="31">
+                                    <input class="w-full border-2 rounded-[3px] mt-3 text-sm p-3 bg-[#F9F9F9] focus:outline-none focus:border-blue-600" name="#" type="text" value="1/2">
+                                </div>
                             </div>
                             <div class="p-2">
                                 <p class="font-bold">Height</p>
-                                <input class="w-full border-2 rounded-sm mt-3 text-sm p-3 bg-zinc-50 focus:outline-none focus:border-blue-600" name="#" type="text" value="45 1/2" />
+                                <div class="flex gap-2">
+                                    <input class="w-full border-2 rounded-[3px] mt-3 text-sm p-3 bg-[#F9F9F9] focus:outline-none focus:border-blue-600" name="#" type="text" value="45">
+                                    <input class="w-full border-2 rounded-[3px] mt-3 text-sm p-3 bg-[#F9F9F9] focus:outline-none focus:border-blue-600" name="#" type="text" value="1/2">
+                                </div>
                             </div>
                             <div class="p-2">
                                 <p class="font-bold">Quantity</p>
-                                <input class="w-full border-2 rounded-sm mt-3 text-sm p-3 bg-zinc-50 focus:outline-none focus:border-blue-600" name="#" type="text" value="1" />
+                                <input class="w-full border-2 rounded-[3px] mt-3 text-sm p-3 bg-[#F9F9F9] focus:outline-none focus:border-blue-600" name="#" type="text" value="1">
                             </div>
                         </div>
                     </div>
 
-                    <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
+                    <div class="box text-left font-medium bg-[#F9F9F9] rounded-b overflow-x-auto shadow-xl mb-10">
                         <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             CONSTRUCTION COLOR
                         </p>
-                        <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="flex text-xs md:text-sm leading-5 overflow-x-auto relative">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 p-2 font-bold text-sm">White</p>
+                                    <p class="pt-[8px] pb-[37px] px-[10px] font-bold text-sm">White</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute -right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="window-active relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="window-active relative  p-5 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
                                     <div class="">
-                                        <p class="p-2 pb-[15px] font-bold text-sm">Beige</p>
-                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
+                                        <p class="truncate py-[8px] px-[10px] font-bold text-sm">Beige</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] rounded-[3px] text-white font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -183,14 +195,14 @@
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
                                     <div class="">
-                                        <p class="p-2 pb-[15px] font-bold text-sm">Black</p>
-                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
+                                        <p class="truncate py-[8px] px-[10px] font-bold text-sm">Black</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded-[3px] font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -202,30 +214,30 @@
                         </div>
                     </div>
 
-                    <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
+                    <div class="box text-left font-medium bg-[#F9F9F9] rounded-b  overflow-x-auto shadow-xl mb-10">
                         <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             WINDOW FITTING COLOR
                         </p>
-                        <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="flex text-xs md:text-sm leading-5 overflow-x-auto relative">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 p-2 font-bold text-sm">White</p>
+                                    <p class="pt-[8px] pb-[37px] px-[10px] font-bold text-sm">White</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="window-active relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="window-active relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
                                     <div class="">
-                                        <p class="p-2 pb-[15px] font-bold text-sm">Beige</p>
-                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
+                                        <p class="truncate py-[8px] px-[10px] font-bold text-sm">Beige</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded-[3px] font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -234,14 +246,14 @@
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
                                     <div class="">
-                                        <p class="p-2 pb-[15px] font-bold text-sm">Black</p>
-                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
+                                        <p class="truncate py-[8px] px-[10px] font-bold text-sm">Black</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded-[3px] font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -253,28 +265,28 @@
                         </div>
                     </div>
 
-                    <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
+                    <div class="box text-left font-medium bg-[#F9F9F9] rounded-b overflow-x-auto shadow-xl mb-10">
                         <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             COMFORT STOP
                         </p>
-                        <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
-                            <div class="window-active relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="flex text-xs md:text-sm leading-5 overflow-x-auto relative">
+                            <div class="window-active relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold text-sm">Yes</p>
+                                    <p class="pt-[8px] pb-[37px] px-[10px] font-bold text-sm">Yes</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold text-sm">No</p>
+                                    <p class="pt-[8px] pb-[37px] px-[10px] font-bold text-sm">No</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -283,30 +295,30 @@
                         </div>
                     </div>
 
-                    <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
+                    <div class="box text-left font-medium bg-[#F9F9F9] rounded-b overflow-x-auto shadow-xl mb-10">
                         <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             GLASS PACKAGE
                         </p>
-                        <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
-                            <div class="window-active relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="flex text-xs md:text-sm leading-5 overflow-x-auto relative">
+                            <div class="window-active relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold text-sm">Low emission</p>
+                                    <p class="pt-[8px] pb-[37px] px-[10px] font-bold text-sm">Low emission</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
                                     <div class="">
-                                        <p class="p-2 pb-[15px] font-bold text-sm">One side hardened</p>
-                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
+                                        <p class="truncate py-[8px] px-[10px] font-bold text-sm">One side hardened</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded-[3px] font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -315,14 +327,14 @@
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
                                     <div class="">
-                                        <p class="p-2 pb-[15px] font-bold text-sm">Hardened on both sides</p>
-                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
+                                        <p class="truncate py-[8px] px-[10px] font-bold text-sm">Hardened on both sides</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded-[3px] font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -331,14 +343,14 @@
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
                                     <div class="">
-                                        <p class="p-2 pb-[15px] font-bold text-sm">Laminated glass</p>
-                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
+                                        <p class="truncate py-[8px] px-[10px] font-bold text-sm">Laminated glass</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded-[3px] font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -347,14 +359,14 @@
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
                                     <div class="">
-                                        <p class="p-2 pb-[15px] font-bold text-sm">Selective</p>
-                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
+                                        <p class="truncate py-[8px] px-[10px] font-bold text-sm">Selective</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded-[3px] font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -369,30 +381,30 @@
                         </p>
                     </div>
 
-                    <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
+                    <div class="box text-left font-medium bg-[#F9F9F9] rounded-b overflow-x-auto shadow-xl mb-10">
                         <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             GALLONS
                         </p>
-                        <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
-                            <div class="window-active relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="flex text-xs md:text-sm leading-5 overflow-x-auto relative">
+                            <div class="window-active relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold text-sm">None</p>
+                                    <p class="pt-[8px] pb-[37px] px-[10px] font-bold text-sm">None</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
                                     <div class="">
-                                        <p class="p-2 pb-[15px] font-bold text-sm">Traditional</p>
-                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
+                                        <p class="truncate py-[8px] px-[10px] font-bold text-sm">Traditional</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded-[3px] font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -401,14 +413,14 @@
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
                                     <div class="">
-                                        <p class="p-2 pb-[15px] font-bold text-sm">Toprow</p>
-                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
+                                        <p class="truncate py-[8px] px-[10px] font-bold text-sm">Toprow</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded-[3px] font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -420,19 +432,19 @@
                         </div>
                     </div>
 
-                    <div class="block text-left font-medium bg-zinc-50 rounded-b shadow-xl mb-10">
+                    <div class="box text-left font-medium bg-[#F9F9F9] rounded-b overflow-x-auto shadow-xl mb-10">
                         <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
-                            WINDOW SCREEN
+                            MOSQUITO SCREEN
                         </p>
-                        <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
-                            <div class="window-active relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="flex text-xs md:text-sm leading-5 overflow-x-auto relative">
+                            <div class="window-active relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
                                     <div class="">
-                                        <p class="p-2 pb-[15px] font-bold text-sm">Yes</p>
-                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded font-[14px]">
+                                        <p class="truncate py-[8px] px-[10px] font-bold text-sm">Yes</p>
+                                        <button class="w-full h-[29px] bg-[#FFA011] text-white rounded-[3px] font-[14px]">
                                             + $9
                                         </button>
                                     </div>
@@ -441,12 +453,12 @@
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold text-sm">No</p>
+                                    <p class="pt-[8px] pb-[37px] px-[10px] font-bold text-sm">No</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -455,28 +467,28 @@
                         </div>
                     </div>
 
-                    <div class="block font-medium text-left rounded-b bg-zinc-50 shadow-xl">
+                    <div class="box font-medium text-left rounded-b bg-[#F9F9F9] overflow-x-auto mb-10 shadow-xl">
                         <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             INSTALLATION OPTION
                         </p>
-                        <div class="flex text-xs md:text-sm leading-5 flex-wrap relative">
-                            <div class="window-active relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="flex text-xs md:text-sm leading-5 overflow-x-auto relative">
+                            <div class="window-active relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold text-sm">New construction</p>
+                                    <p class="truncate pt-[8px] pb-[37px] px-[10px] font-bold text-sm">New construction</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
                                 </div>
                             </div>
-                            <div class="relative p-5 px-3 w-[150px] md:w-[200px]">
-                                <div class="window-border shadow-xl relative cursor-pointer">
+                            <div class="relative p-6 px-3 w-[185px] flex-shrink-0">
+                                <div class="window-border rounded-[3px] shadow-xl relative cursor-pointer">
                                     <div class="relative">
-                                        <img class="w-full md:w-[176px]" src="img/window5.svg">
+                                        <img class="w-[161px]" src="img/window5.svg">
                                     </div>
-                                    <p class="p-2 pb-11 font-bold text-sm">Replacement</p>
+                                    <p class="truncate pt-[8px] pb-[37px] px-[10px] font-bold text-sm">Replacement</p>
                                 </div>
                                 <div class="check-mark justify-center items-center hidden absolute right-[0px] top-[9px] w-7 h-7 bg-blue-500 rounded-full border-full">
                                     <i class="fa fa-check text-white text-base"></i>
@@ -485,40 +497,119 @@
                         </div>
                     </div>
 
-                    <div class="block text-left font-medium rounded-b bg-zinc-50 shadow-xl">
+                    <div class="box text-left font-medium rounded-b bg-[#F9F9F9] shadow-xl">
                         <p class="bg-[#404040] px-4 py-2 font-semibold text-sm md:text-lg text-white rounded-t">
                             SPECIAL PROFILE
                         </p>
-                        <div class="w-full bg-white flex text-[#333333]">
-                            <div class="p-5 px-3">
+                        <div class="w-full flex text-[#333333]">
+                            <div class="p-5 px-3 w-full">
                                 <div class="w-full lg:flex justify-between items-end gap-5">
                                     <div>
-                                        <button class="inline-flex justify-between w-72 border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                                            <p>XYZ SPECIAL PROFILE <span class="font-bold">(+$ 99.99)</span></p>
-                                            <svg class="w-5 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <button class="inline-flex justify-between lg:w-72 h-[48px] w-full border rounded-[3px] border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                            <p class="my-auto">XYZ SPECIAL PROFILE <span class="font-bold">(+$ 99.99)</span></p>
+                                            <svg class="w-5 my-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                             <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                                             </svg>
                                         </button>
                                     </div>
                                     <div class="py-5 lg:py-0">
-                                        <label class="block mb-2 text-base font-medium text-[#333333]">Length</label>
-                                        <input type="text" id="length" class="border text-[#333333] w-fit text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" value="10000mm" required>
+                                        <label for="length" class="block mb-2 text-base font-medium text-[#333333]">Length</label>
+                                        <div class="grid grid-cols-3 gap-4">
+                                            <input type="text" id="length" class="col-span-2 border text-[#333333] h-[48px] rounded-[3px] text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" value='31' required>
+                                            <input type="text" id="length" class="col-span-1 border text-[#333333] h-[48px] rounded-[3px] text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" value='1/2' required>
+                                        </div>
                                     </div>
-                                    <div class="flex lg:justify-between items-center gap-4">
-                                        <button class="bg-[#FFA011] text-white rounded text-2xl font-semibold h-9 px-3">-</button>
-                                        <p class="text-base font-medium text-[#333333]">1</p>
-                                        <button class="bg-[#FFA011] text-white rounded text-2xl font-semibold h-9 px-3">+</button>
-                                        <button><img  class="bg-[#EEEEEE] p-3 rounded text-[#BDBDBD]" src="img/trash.svg"></button>
+                                    <div class="flex mb-[6px] justify-between items-center gap-4">
+                                        <div class="flex gap-4">
+                                            <button class="bg-[#FFA011] text-white rounded text-2xl font-semibold w-[36px] h-[36px] px-3">&minus;</button>
+                                            <p class="text-xl my-auto font-medium text-[#333333]">1</p>
+                                            <button class="bg-[#FFA011] text-white rounded text-2xl font-semibold w-[36px] h-[36px] px-3">&plus;</button>
+                                        </div>
+                                        <div class="flex gap-4 justify-end">
+                                            <button class="w-[36px] h-[36px] lg:static"><img  class="bg-[#FFA011] p-3 rounded text-[#BDBDBD]" src="img/pencil.svg"></button>
+                                            <button class="w-[36px] h-[36px] lg:static"><img  class="bg-[#FFA011] p-3 rounded text-[#BDBDBD]" src="img/trash-white.svg"></button>
+                                        </div>
                                     </div>
                                 </div>
                                 <p class="text-sm font-normal my-6">The color of the special profile will be the same as the color of the structure. (White)</p>
-                                <button class="bg-[#FFA011] text-white rounded text-base font-semibold p-4">Add a special profile</button>
+                                <button class="bg-[#FFA011] text-white rounded text-base font-semibold p-4" id="open">Add A Special Profile</button>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
+
+            <!-- Overlay element -->
+            <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+             <!-- The dialog for Special profile -->
+             <div class="fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[382px] sm:w-[700px] shadow-md p-6 space-y-5 rounded-lg bg-[#F9F9F9] drop-shadow-lg hidden" id="dialog_SP">
+                <div class="flex justify-between items-center">
+                    <p class="font-bold text-[24px]">Special profile</p>
+                    <button id="close_SP">
+                        <img src="img/multi.svg">
+                    </button>
+                </div>
+                <div class="block sm:flex justify-start items-end gap-4 mt-3">
+                    <div class="grid grid-cols-2 gap-4 sm:flex">
+                        <div class="grid grid-cols-1">
+                            <label for="profile-input" class="font-semibold text-[16px]">Select a profile</label>
+                            <input id="profile-input" type="text" class="border rounded-sm h-[50px] p-3 mt-2 focus:rounded-blue-500" value="XYZ SPECIAL PROFILE">
+                        </div>
+                        <div class="grid grid-cols-1">
+                            <label for="length-input" class="font-semibold text-[16px]">Length</label>
+                            <div class="flex gap-2">
+                                <input id="length-input" type="text" class="w-full sm:w-[81px] h-[48px] border rounded-sm p-3 mt-2" value="0">
+                                <select class="appearance-none bg-no-repeat bg-[calc(100%-6px)] bg-[length:25px] w-full sm:w-[60px] border rounded-sm h-[48px] p-3 mt-2" style="background-image: url(img/chevron-down.svg);" aria-label="Default select example">
+                                    <option>0</option>
+                                    <option>1/8</option>
+                                    <option>1/4</option>
+                                    <option>3/8</option>
+                                    <option>1/8</option>
+                                    <option>5/8</option>
+                                    <option>3/4</option>
+                                    <option>7/8</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="grid grid-cols-2 gap-2 sm:flex">                  
+                        <div class="grid grid-cols-1">
+                            <label class="font-semibold text-[16px]">Color</label>
+                            <select class="appearance-none bg-no-repeat bg-[calc(100%-6px)] bg-[length:25px] w-[130px] sm:w-[100px] border rounded-sm h-[50px] p-3 mt-2" style="background-image: url(img/chevron-down.svg);" aria-label="Default select example">
+                                <option>White</option>
+                                <option>Black</option>
+                            </select>
+                        </div>
+                        <div class="flex w-[165psx] justify-start sm:justify-between items-end gap-4 mb-[7px]">
+                            <button class="w-9 h-9 bg-[#FFA011] rounded text-white text-4xl font-lite justify-center items-center flex">&minus;</button>
+                            <p class="text-[20px] mb-[7px] font-semibold">1</p>
+                            <button class="w-9 h-9 bg-[#FFA011] rounded text-white text-4xl font-lite justify-center items-center flex">&plus;</button>
+                            <button class="w-9 h-9"><img  class="bg-[#EEEEEE] p-3 rounded text-[#BDBDBD]" src="img/trash.svg"></button>
+                        </div>
+                    </div>
+                </div>
+                <button class="w-[150px] h-[48px] text-[14px] rounded bg-[#FFA011] text-white mt-4">Add special profile</button>
+            </div>
         </div>
     </body>
 </html>
+<script>
+    var openButton = document.getElementById("open");
+    var dialogSP = document.getElementById("dialog_SP");
+    var closeSPButton = document.getElementById("close_SP");
+    var overlay = document.getElementById("overlay");
+  
+    // show the overlay and the dialog
+    openButton.addEventListener("click", function () {
+        dialogSP.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+    });
+  
+    // hide the overlay and the dialog
+    closeSPButton.addEventListener("click", function () {
+        dialogSP.classList.add("hidden");
+        overlay.classList.add("hidden");
+    });
+  </script>

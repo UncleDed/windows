@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="output.css">
+        <link rel="stylesheet" href="dist/css/app.css">
         <title>DECCO Windows</title>
     </head>
-    <body class="font-rubik bg-white px-0 pt-0">
+    <body class="bg-white min-h-[600px] px-0 pt-0">
         <div class="bg-cover min-h-[600px]">
             <!-- HEADER -->
             <div class="shadow-xl w-full flex">
@@ -18,379 +18,419 @@
                     </div>
                 </a>
             </div>
-            <div class="mt-8 mx-6">
-                <!-- PAGINATION -->
-                <nav class="flex mt-4 text-[#848484]" aria-label="Breadcrumb">
-                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
-                        <li class="inline-flex items-center">
-                            <a href="#" class="inline-flex items-center text-sm font-medium hover:text-blue-600">Home</a>
-                        </li>
-                        <li>
-                            <div class="flex items-center">
-                            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                            <a href="#" class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2">Konfigurator</a>
+            <div class="flex shadow-xl">
+                <div class="bg-white p-2 text-[#323232] w-[64px] lg:w-[209px] shadow-xl">
+                    <div class=" justify-center font-semibold">
+                        <button type="button" class=" flex w-[48px] lg:w-[193px] h-[48px] rounded bg-[#FFA011]">
+                            <div class="w-[48px] h-[48px] flex justify-center items-center">
+                                <img class="h-[24px]" src="img/config-white.svg"> 
                             </div>
-                        </li>
-                        <li>
-                            <div class="flex items-center">
-                            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                            <a href="#" class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2">Window type</a>
+                            <p class="hidden lg:block text-white text-left my-auto">Configurator</p>
+                        </button>
+                        <button type="button" class=" flex w-[48px] lg:w-[193px] h-[48px] rounded bg-[#FFFFFF]">
+                            <div class="w-[48px] h-[48px] flex justify-center items-center">
+                                <img class="h-[24px]" src="img/offer.svg"> 
                             </div>
-                        </li>
-                        <li>
-                            <div class="flex items-center">
-                            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                            <a href="#" class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2">Window configurator</a>
+                            <p class="hidden lg:block text-black text-left my-auto">My offers</p>
+                        </button>
+                        <button type="button" class=" flex w-[48px] lg:w-[193px] h-[48px] rounded bg-[#FFFFFF]">
+                            <div class="w-[48px] h-[48px] flex justify-center items-center">
+                                <img class="h-[24px]" src="img/worker.svg"> 
                             </div>
-                        </li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="grid grid-cols-1 xl:grid-cols-2 m-6 md:gap-12">
-                <!-- CONTENT -->
-                <div class="col-span-1">
-                    <!-- Your Product title & button -->
-                    <div class="flex justify-between justify-center items-center">
-                        <div class="flex justify-start">
-                            <h1 class="text-left text-[23px] sm:text-[36px] md:text-[46px] font-normal">
-                                <span class="font-bold text-[#FFA011]">Your</span> products
-                            </h1>
-                            <a class="w-[30px] sm:w-[40px]">
-                                <img src="img/chevron-down.svg" />
-                            </a>
-                        </div>
-                        <buttonn class=" btn h-[40px] bg-[#FFA011] text-white rounded text-[14px] font-medium px-4">Add another product</button>
+                            <p class="hidden lg:block text-black text-left my-auto">Workers</p>
+                        </button>
+                        <button type="button" class=" flex w-[48px] lg:w-[193px] h-[48px] rounded bg-[#FFFFFF]">
+                            <div class="w-[48px] h-[48px] flex justify-center items-center">
+                                <img class="h-[24px]" src="img/gear.svg"> 
+                            </div>
+                            <p class="hidden lg:block text-black text-left my-auto">Settings</p>
+                        </button>
+                        <button type="button" class=" flex w-[48px] lg:w-[193px] h-[48px] rounded bg-[#FFFFFF]">
+                            <div class="w-[48px] h-[48px] flex justify-center items-center">
+                                <img class="h-[24px]" src="img/inform.svg"> 
+                            </div>
+                            <p class="hidden lg:block text-black text-left my-auto">Informarion</p>
+                        </button>
                     </div>
-
-                    <!-- PATIO DOOR BLACK -->
-                    <div class="w-full shadow-lg">
-                        <!-- title -->
-                        <div class="w-full bg-[#404040] h-[58px] mt-4 rounded-t-[3px] flex justify-between items-center px-4">
-                            <p class="text-[16px] sm:text-[18px] font-normal text-[#FFFFFF]">
-                                <span class="font-semibold">PATIO DOOR</span> BLACK
-                                <br class="flex sm:hidden">(1000 MM x 2000 MM)
-                            </p>
-                            <div class="flex justify-between items-center gap-4">
-                                <button class="w-9 h-9 bg-[#FFA011] rounded">
-                                    <img src="img/pencil.svg" class="w-[16px] m-auto">
-                                </button>
-                                <button class="w-9 h-9 bg-[#FFA011] rounded">
-                                    <img src="img/copy.svg" class="w-[16px] m-auto">
-                                </button>
-                                <button class="w-9 h-9 bg-[#FFA011] rounded">
-                                    <img src="img/trash-white.svg" class="w-[16px] m-auto">
-                                </button>
-                            </div>
-                        </div>
-                        <!-- content -->
-                        <div class="w-full p-4">
-                            <div class="w-full sm:flex justify-between gap-6">
-                                <div class="w-[200px] m-auto sm:m-0 md:w-[262px]">
-                                    <img class="m-auto" src="img/window1.svg">
-                                </div>
-                                <div class="w-full flex-1 mt-4 sm:mt-0">
-                                    <div class="w-full block flex justify-between items-center gap-4">
-                                        <div class="min-w-[150px] w-full flex justify-between">
-                                            <p>Unit price:</p>
-                                            <p>$ 999,99</p>
-                                        </div>
-                                        <div class="flex justify-end items-center gap-[10px]">
-                                            <button class="w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&minus;</button>
-                                            <p class="text-[20px] font-bold">5</p>
-                                            <button class="w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&plus;</button>
-                                        </div>
+                </div>
+                <div class="w-full">
+                    <div class="mt-8 mx-6">
+                        <!-- PAGINATION -->
+                        <nav class="flex mt-4 text-[#848484]" aria-label="Breadcrumb">
+                            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                                <li class="inline-flex items-center">
+                                    <a href="#" class="inline-flex items-center text-sm font-medium hover:text-blue-600">Home</a>
+                                </li>
+                                <li>
+                                    <div class="flex items-center">
+                                    <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                                    <a href="#" class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2">Konfigurator</a>
                                     </div>
-                                        <!-- horizont line -->
-                                        <div class="border-t border-1 border-[#BDBDBD] mt-3"></div>
-                                    <div class="block sm:mr-[96px]">
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Height:</p>
-                                            <p>31 1/2"</p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Width:</p>
-                                            <p>45 1/2"</p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Opening side:</p>
-                                            <p>Left</p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Construction color:</p>
-                                            <p>White <span class="font-semibold">(+ 9,99 $)</span></p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Fittings color:</p>
-                                            <p>White <span class="font-semibold">(+ 9,99 $)</span></p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Threshold:</p>
-                                            <p>PCV</p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Glazing unit:</p>
-                                            <p>Low emission</p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Glazing bars:</p>
-                                            <p>Prarie</p>
-                                        </div>
-                                        <div  class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Window screen:</p>
-                                            <p>Yes <span class="font-semibold">(+ 3 $)</span></p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Instalation option:</p>
-                                            <p>New construction</p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>XYZ special profile:</p>
-                                            <p>45 1/2"</p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-start mt-4 text-[#FFA011] gap-[4px]">
-                                            <button class="btn shadow-none justify-center items-center gap-1 sm:px-0">
-                                                <p>See less</p>
-                                                <img src="img/chevron-up.svg" />
-                                            </button>
-                                        </div>
+                                </li>
+                                <li>
+                                    <div class="flex items-center">
+                                    <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                                    <a href="#" class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2">Window type</a>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                </li>
+                                <li>
+                                    <div class="flex items-center">
+                                    <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                                    <a href="#" class="ml-1 text-sm font-medium hover:text-blue-600 md:ml-2">Window configurator</a>
+                                    </div>
+                                </li>
+                            </ol>
+                        </nav>
                     </div>
+                    <div class="grid grid-cols-1 xl:grid-cols-2 m-6 md:gap-12">
+                        <!-- CONTENT -->
+                        <div class="col-span-1">
 
-                    <!-- SINGLE-HUNG BLACK -->
-                    <div class="w-full shadow-lg">
-                        <!-- title -->
-                        <div  class="w-full bg-[#404040] h-[58px] mt-4 rounded-t-[3px] flex justify-between items-center px-4">
-                            <p class="text-[16px] sm:text-[18px] font-normal text-[#FFFFFF]">
-                                <span class="font-semibold">SINGLE-HUNG</span>BLACK
-                                <br class="flex sm:hidden">(1000 MM x 2000 MM)
-                            </p>
-                            <div class="flex justify-between items-center gap-4">
-                                <button class="btn w-9 h-9 bg-[#FFA011] rounded">
-                                    <img src="img/pencil.svg" class="w-[16px] m-auto">
-                                </button>
-                                <button class="btn w-9 h-9 bg-[#FFA011] rounded">
-                                    <img src="img/copy.svg" class="w-[16px] m-auto">
-                                </button>
-                                <button class="btn w-9 h-9 bg-[#FFA011] rounded">
-                                    <img src="img/trash-white.svg" class="w-[16px] m-auto">
-                                </button>
-                            </div>
-                        </div>
-                        <!-- content -->
-                        <div class="w-full p-4">
-                            <div class="w-full sm:flex justify-between gap-6">
-                                <div class="w-[200px] m-auto sm:m-0 md:w-[262px]">
-                                    <img src="img/window1.svg" class="m-auto">
+                            <!-- Your Product title & button -->
+                            <div class="flex justify-between justify-center items-center">
+                                <div class="flex justify-start">
+                                    <h1 class="text-left text-[23px] sm:text-[36px] md:text-[46px] font-normal">
+                                        <span class="font-bold text-[#FFA011]">Your</span> products
+                                    </h1>
+                                    <a class="w-[30px] sm:w-[40px]">
+                                        <img src="img/chevron-down.svg" />
+                                    </a>
                                 </div>
-                                <div class="w-full flex-1 mt-3 sm:mt-0">
-                                    <div class="w-full block flex justify-between items-center gap-4">
-                                        <div class="min-w-[150px] w-full flex justify-between">
-                                            <p>Unit price:</p>
-                                            <p>$ 999,99</p>
+                                <buttonn class=" btn h-[40px] bg-[#FFA011] text-white rounded text-[14px] font-medium px-4">Add another product</button>
+                            </div>
+
+                            <!-- PATIO DOOR BLACK -->
+                            <div class="w-full shadow-lg">
+                                <!-- title -->
+                                <div class="w-full bg-[#404040] h-[58px] mt-4 rounded-t-[3px] flex justify-between items-center px-4">
+                                    <p class="text-[16px] sm:text-[18px] font-normal text-[#FFFFFF]">
+                                        <span class="font-semibold">PATIO DOOR</span> BLACK
+                                        <br class="flex sm:hidden">(1000 MM x 2000 MM)
+                                    </p>
+                                    <div class="flex justify-between items-center gap-4">
+                                        <button class="w-9 h-9 bg-[#FFA011] rounded">
+                                            <img src="img/pencil.svg" class="w-[16px] m-auto">
+                                        </button>
+                                        <button class="w-9 h-9 bg-[#FFA011] rounded">
+                                            <img src="img/copy.svg" class="w-[16px] m-auto">
+                                        </button>
+                                        <button class="w-9 h-9 bg-[#FFA011] rounded">
+                                            <img src="img/trash-white.svg" class="w-[16px] m-auto">
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- content -->
+                                <div class="w-full p-4 bg-[#F9F9F9]">
+                                    <div class="w-full sm:flex justify-between gap-6">
+                                        <div class="w-[200px] m-auto sm:m-0 md:w-[262px]">
+                                            <img class="m-auto" src="img/window1.svg">
                                         </div>
-                                        <div class="flex justify-start items-center gap-[10px]">
-                                            <button class="btn w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&minus;</button>
-                                            <p class="text-[20px] font-bold">5</p>
-                                            <button class="btn w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&plus;</button>
+                                        <div class="w-full flex-1 mt-4 sm:mt-0">
+                                            <div class="w-full block flex justify-between items-center gap-4">
+                                                <div class="min-w-[150px] w-full flex justify-between">
+                                                    <p>Unit price:</p>
+                                                    <p>$ 999,99</p>
+                                                </div>
+                                                <div class="flex justify-end items-center gap-[10px]">
+                                                    <button class="w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&minus;</button>
+                                                    <p class="text-[20px] font-bold">5</p>
+                                                    <button class="w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&plus;</button>
+                                                </div>
+                                            </div>
+                                                <!-- horizont line -->
+                                                <div class="border-t border-1 border-[#BDBDBD] mt-3"></div>
+                                            <div class="block sm:mr-[96px]">
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Height:</p>
+                                                    <p>31 1/2"</p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Width:</p>
+                                                    <p>45 1/2"</p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Opening side:</p>
+                                                    <p>Left</p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Construction color:</p>
+                                                    <p>White <span class="font-semibold">(+ 9,99 $)</span></p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Fittings color:</p>
+                                                    <p>White <span class="font-semibold">(+ 9,99 $)</span></p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Threshold:</p>
+                                                    <p>PCV</p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Glazing unit:</p>
+                                                    <p>Low emission</p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Glazing bars:</p>
+                                                    <p>Prarie</p>
+                                                </div>
+                                                <div  class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Window screen:</p>
+                                                    <p>Yes <span class="font-semibold">(+ 3 $)</span></p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Instalation option:</p>
+                                                    <p>New construction</p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>XYZ special profile:</p>
+                                                    <p>45 1/2"</p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-start mt-4 text-[#FFA011] gap-[4px]">
+                                                    <button class="btn shadow-none justify-center items-center gap-1 sm:px-0">
+                                                        <p>See less</p>
+                                                        <img src="img/chevron-up.svg" />
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                        <!-- horizont line -->
-                                        <div class="border-t border-1 border-[#BDBDBD] mt-3"></div>
-                                    <div class="block sm:mr-[96px]">
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Height:</p>
-                                            <p>31 1/2"</p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Width:</p>
-                                            <p>45 1/2"</p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Opening side:</p>
-                                            <p>Left</p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Construction color:</p>
-                                            <p>White <span class="font-semibold">(+ 9,99 $)</span></p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Fittings color:</p>
-                                            <p>White <span class="font-semibold">(+ 9,99 $)</span></p>
-                                        </div>
-                                        <div class="min-w-[255px] w-full flex justify-between mt-4">
-                                            <p>Threshold:</p>
-                                            <p>PCV</p>
-                                        </div>
+                                </div>
+                            </div>
 
-                                        <div class="min-w-[255px] w-full flex justify-start mt-4 text-[#FFA011] gap-[4px]">
-                                            <button class="btn shadow-none justify-center items-center gap-1 sm:px-0">
-                                                <p>See more</p>
+                            <!-- SINGLE-HUNG BLACK -->
+                            <div class="w-full shadow-lg">
+                                <!-- title -->
+                                <div  class="w-full bg-[#404040] h-[58px] mt-4 rounded-t-[3px] flex justify-between items-center px-4">
+                                    <p class="text-[16px] sm:text-[18px] font-normal text-[#FFFFFF]">
+                                        <span class="font-semibold">SINGLE-HUNG</span>BLACK
+                                        <br class="flex sm:hidden">(1000 MM x 2000 MM)
+                                    </p>
+                                    <div class="flex justify-between items-center gap-4">
+                                        <button class="btn w-9 h-9 bg-[#FFA011] rounded">
+                                            <img src="img/pencil.svg" class="w-[16px] m-auto">
+                                        </button>
+                                        <button class="btn w-9 h-9 bg-[#FFA011] rounded">
+                                            <img src="img/copy.svg" class="w-[16px] m-auto">
+                                        </button>
+                                        <button class="btn w-9 h-9 bg-[#FFA011] rounded">
+                                            <img src="img/trash-white.svg" class="w-[16px] m-auto">
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- content -->
+                                <div class="w-full p-4 bg-[#F9F9F9]">
+                                    <div class="w-full sm:flex justify-between gap-6">
+                                        <div class="w-[200px] m-auto sm:m-0 md:w-[262px]">
+                                            <img src="img/window1.svg" class="m-auto">
+                                        </div>
+                                        <div class="w-full flex-1 mt-3 sm:mt-0">
+                                            <div class="w-full block flex justify-between items-center gap-4">
+                                                <div class="min-w-[150px] w-full flex justify-between">
+                                                    <p>Unit price:</p>
+                                                    <p>$ 999,99</p>
+                                                </div>
+                                                <div class="flex justify-start items-center gap-[10px]">
+                                                    <button class="btn w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&minus;</button>
+                                                    <p class="text-[20px] font-bold">5</p>
+                                                    <button class="btn w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&plus;</button>
+                                                </div>
+                                            </div>
+                                                <!-- horizont line -->
+                                                <div class="border-t border-1 border-[#BDBDBD] mt-3"></div>
+                                            <div class="block sm:mr-[96px]">
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Height:</p>
+                                                    <p>31 1/2"</p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Width:</p>
+                                                    <p>45 1/2"</p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Opening side:</p>
+                                                    <p>Left</p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Construction color:</p>
+                                                    <p>White <span class="font-semibold">(+ 9,99 $)</span></p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Fittings color:</p>
+                                                    <p>White <span class="font-semibold">(+ 9,99 $)</span></p>
+                                                </div>
+                                                <div class="min-w-[255px] w-full flex justify-between mt-4">
+                                                    <p>Threshold:</p>
+                                                    <p>PCV</p>
+                                                </div>
+
+                                                <div class="min-w-[255px] w-full flex justify-start mt-4 text-[#FFA011] gap-[4px]">
+                                                    <button class="btn shadow-none justify-center items-center gap-1 sm:px-0">
+                                                        <p>See more</p>
+                                                        <img src="img/chevron-down-y.svg" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Special profiles title & button -->
+                            <div class="flex justify-between items-center mt-8 sm:mt-10">
+                                <div class="flex justify-start items-center">
+                                    <h1 class="text-left text-[23px] sm:text-[36px] md:text-[46px] font-normal">
+                                        <span class="font-bold text-[#FFA011]">Special</span> profiles
+                                    </h1>
+                                    <a class="w-[30px] sm:w-[40px]">
+                                        <img src="img/chevron-down.svg" />
+                                    </a>
+                                </div>
+                                <buttonn class="btn h-[40px] bg-[#FFA011] text-white rounded text-[14px] font-medium px-4">Add another product</button>
+                            </div>
+
+                            <!-- PROFIL XYZ -->
+                            <div class="w-full shadow-lg mt-5">
+                                <!-- title -->
+                                <div class="w-full bg-[#404040] h-[58px] mt-4 rounded-t-[3px] flex justify-between items-center px-4">
+                                    <p class="text-[16px] sm:text-[18px] font-normal text-[#FFFFFF]">
+                                        <span class="font-semibold">PRIFIL XYZ</span> BLACK (31 1/2")
+                                    </p>
+                                    <div class="flex justify-center items-center gap-4">
+                                        <button class="btn w-9 h-9 bg-[#FFA011] rounded">
+                                            <img src="img/pencil.svg" class="w-[16px] m-auto">
+                                        </button>
+                                        <button class="btn w-9 h-9 bg-[#FFA011] rounded">
+                                            <img src="img/copy.svg" class="w-[16px] m-auto">
+                                        </button>
+                                        <button class="btn w-9 h-9 bg-[#FFA011] rounded">
+                                            <img src="img/trash-white.svg" class="w-[16px] m-auto">
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- content -->
+                                <div class="w-full p-4 bg-[#F9F9F9]">
+                                    <div class="w-full flex justify-between gap-6">
+                                        <div class="w-full">
+                                            <div class="justify-between items-center gap-4">
+                                                <div class="w-full flex">
+                                                    <p class="font-semibold w-1/2">PROFIL XYZ BLACK (20000 mm)</p>
+                                                    <div class="w-1/2 flex justify-between">
+                                                        <p class="text-left">Quantity:</p>
+                                                        <div class="flex items-center justify-end gap-[10px]">
+                                                            <button class="btn w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&minus;</button>
+                                                            <p class="text-[20px] font-bold">1</p>
+                                                            <button class="btn w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&plus;</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex mt-4">
+                                                    <div class="w-1/2 "></div>
+                                                    <div class="w-1/2 flex justify-between">
+                                                        <p class="text-left">Unit price:</p>
+                                                        <p class="text-right">$ 999,99</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- POPSUMOWANIE -->
+                        <div class="col-span-1 mt-8 md:mt-0">
+                            <h1 class="text-[23px] sm:text-[36px] md:text-[46px] pt-[10px] font-bold text-[#FFA011]">Podsumowanie</h1>
+                            
+                            <!-- title & content -->
+                            <div class="w-full shadow-lg">
+                                <!-- title -->
+                                <div class="w-full bg-[#404040] h-[58px] mt-[26px] rounded-t-[3px] flex justify-between items-center px-4">
+                                    <p class="text-[16px] sm:text-[18px] font-normal text-[#FFFFFF]">
+                                        <span class="font-semibold">JAKUB NOWAKOWSKI</span>
+                                    </p>
+                                    <div class="flex justify-center items-center gap-4">
+                                        <button class="btn w-9 h-9 bg-[#FFA011] rounded">
+                                            <img src="img/pencil.svg" class="w-[16px] m-auto">
+                                        </button>
+                                        <div class="flex justify-start text-[#FFA011]">
+                                            <button class="btn flex justify-center items-center gap-1">
+                                                <p>Details</p>
                                                 <img src="img/chevron-down-y.svg" />
                                             </button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Special profiles title & button -->
-                    <div class="flex justify-between items-center mt-8 sm:mt-10">
-                        <div class="flex justify-start items-center">
-                            <h1 class="text-left text-[23px] sm:text-[36px] md:text-[46px] font-normal">
-                                <span class="font-bold text-[#FFA011]">Special</span> profiles
-                            </h1>
-                            <a class="w-[30px] sm:w-[40px]">
-                                <img src="img/chevron-down.svg" />
-                            </a>
-                        </div>
-                        <buttonn class="btn h-[40px] bg-[#FFA011] text-white rounded text-[14px] font-medium px-4">Add another product</button>
-                    </div>
-
-                    <!-- PROFIL XYZ -->
-                    <div class="w-full shadow-lg mt-5">
-                        <!-- title -->
-                        <div class="w-full bg-[#404040] h-[58px] mt-4 rounded-t-[3px] flex justify-between items-center px-4">
-                            <p class="text-[16px] sm:text-[18px] font-normal text-[#FFFFFF]">
-                                <span class="font-semibold">PRIFIL XYZ</span> BLACK (31 1/2")
-                            </p>
-                            <div class="flex justify-center items-center gap-4">
-                                <button class="btn w-9 h-9 bg-[#FFA011] rounded">
-                                    <img src="img/pencil.svg" class="w-[16px] m-auto">
-                                </button>
-                                <button class="btn w-9 h-9 bg-[#FFA011] rounded">
-                                    <img src="img/copy.svg" class="w-[16px] m-auto">
-                                </button>
-                                <button class="btn w-9 h-9 bg-[#FFA011] rounded">
-                                    <img src="img/trash-white.svg" class="w-[16px] m-auto">
-                                </button>
-                            </div>
-                        </div>
-                        <!-- content -->
-                        <div class="w-full p-4">
-                            <div class="w-full flex justify-between gap-6">
-                                <div class="w-full">
-                                    <div class="justify-between items-center gap-4">
-                                        <div class="w-full flex">
-                                            <p class="font-semibold w-1/2">PROFIL XYZ BLACK (20000 mm)</p>
-                                            <div class="w-1/2 flex justify-between">
-                                                <p class="text-left">Quantity:</p>
-                                                <div class="flex items-center justify-end gap-[10px]">
-                                                    <button class="btn w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&minus;</button>
-                                                    <p class="text-[20px] font-bold">1</p>
-                                                    <button class="btn w-6 h-6 bg-[#FFA011] rounded text-white text-2xl font-thin justify-center items-center flex">&plus;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex mt-4">
-                                            <div class="w-1/2 "></div>
-                                            <div class="w-1/2 flex justify-between">
-                                                <p class="text-left">Unit price:</p>
-                                                <p class="text-right">$ 999,99</p>
-                                            </div>
+                                <!-- content -->
+                                <div class="w-full p-4 bg-[#F9F9F9]">
+                                    <div class="w-full block sm:flex justify-between item-center">
+                                        <p><span class="font-semibold">SINGLE-HUNG</span> BLACK (1000 mm x 2000 mm)</p>
+                                        <div class="flex justify-between item-center gap-[42px]">
+                                            <p>x5</p>
+                                            <p>$ 999,99</p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- POPSUMOWANIE -->
-                <div class="col-span-1 mt-8 md:mt-0 ">
-                    <h1 class="text-[23px] sm:text-[36px] md:text-[46px] font-bold text-[#FFA011]">Podsumowanie</h1>
-                    <!-- title & content -->
-                    <div class="w-full shadow-lg mt-5">
-                        <!-- title -->
-                        <div class="w-full bg-[#404040] h-[58px] mt-4 rounded-t-[3px] flex justify-between items-center px-4">
-                            <p class="text-[16px] sm:text-[18px] font-normal text-[#FFFFFF]">
-                                <span class="font-semibold">JAKUB NOWAKOWSKI</span>
-                            </p>
-                            <div class="flex justify-center items-center gap-4">
-                                <button class="btn w-9 h-9 bg-[#FFA011] rounded">
-                                    <img src="img/pencil.svg" class="w-[16px] m-auto">
-                                </button>
-                                <div class="flex justify-start text-[#FFA011]">
-                                    <button class="btn flex justify-center items-center gap-1">
-                                        <p>Details</p>
-                                        <img src="img/chevron-down-y.svg" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- content -->
-                        <div class="w-full p-4">
-                            <div class="w-full block sm:flex justify-between item-center">
-                                <p><span class="font-semibold">SINGLE-HUNG</span> BLACK (1000 mm x 2000 mm)</p>
-                                <div class="flex justify-between item-center gap-[42px]">
-                                    <p>x5</p>
-                                    <p>$ 999,99</p>
-                                </div>
-                            </div>
-                            <div class="flex justify-between item-center text-[#A1A1A1] mt-4">
-                                <p>TAX (iINCL.)</p>
-                                <p class="mr-[29px]">$ 20</p>
-                            </div>
-                            <div class="flex justify-between item-center text-[#A1A1A1] mt-4">
-                                <p>DELIVERY (INCL.)</p>
-                                <p class="mr-[29px]">$ 10</p>
-                            </div>
-                            <div class="w-full block sm:flex justify-between item-center mt-4">
-                                <p><span class="font-semibold">PROFIL</span> XYZ BLACK (20000 mm)</p>
-                                <div class="flex justify-between item-center gap-[42px]">
-                                    <p>x5</p>
-                                    <p>$ 999,99</p>
-                                </div>
-                            </div>
-                            <div  class="w-full block sm:flex justify-between item-center mt-4">
-                                <p><span class="font-semibold">PATIO DOOR</span> BLACK (1000 mm x 2000 mm)</p>
-                                <div class="flex justify-between item-center gap-[42px]">
-                                    <p>x5</p>
-                                    <p>$ 999,99</p>
-                                </div>
-                            </div>
-                            <div class="border-t border-1 border-[#BDBDBD] mt-4"></div>
-                                <div class="w-full flex justify-between item-center mt-4">
-                                    <p class="font-semibold">ASSEMBLY</p>
-                                    <p>$ 999,99</p>
-                                </div>
-                                <div class="w-full flex justify-between item-center mt-4">
-                                    <p class="font-semibold">DISCOUNT</p>
-                                    <p>-$ 999,99</p>
-                                </div>
-                                <div class="border-t border-1 border-[#BDBDBD] mt-4"></div>
-                                    <div class="w-full flex justify-between item-center mt-4">
-                                        <p class="text-2xl text-[#333333] font-bold">Price:</p>
-                                        <p class="text-2xl text-[#333333] font-bold">$ 2222,00</p>
+                                    <div class="flex justify-between item-center text-[#A1A1A1] mt-4">
+                                        <p>TAX (iINCL.)</p>
+                                        <p class="mr-[29px]">$ 20</p>
+                                    </div>
+                                    <div class="flex justify-between item-center text-[#A1A1A1] mt-4">
+                                        <p>DELIVERY (INCL.)</p>
+                                        <p class="mr-[29px]">$ 10</p>
+                                    </div>
+                                    <div class="w-full block sm:flex justify-between item-center mt-4">
+                                        <p><span class="font-semibold">PROFIL</span> XYZ BLACK (20000 mm)</p>
+                                        <div class="flex justify-between item-center gap-[42px]">
+                                            <p>x5</p>
+                                            <p>$ 999,99</p>
+                                        </div>
+                                    </div>
+                                    <div  class="w-full block sm:flex justify-between item-center mt-4">
+                                        <p><span class="font-semibold">PATIO DOOR</span> BLACK (1000 mm x 2000 mm)</p>
+                                        <div class="flex justify-between item-center gap-[42px]">
+                                            <p>x5</p>
+                                            <p>$ 999,99</p>
+                                        </div>
                                     </div>
                                     <div class="border-t border-1 border-[#BDBDBD] mt-4"></div>
-                                        <div class="w-full flex justify-between items-end gap-4 mt-4">
-                                            <div class="w-full">
-                                                <label for="regular-form-1" class="form-label font-bold text-[16px]">Add a discount</label>
-                                                <input id="regular-form-1" type="text" class="form-control h-[48px]" placeholder="Input text" value="0">
-                                            </div>
-                                            <button class="btn w-[48px] h-[48px] rounded bg-[#FFA011] text-white">
-                                                <img class="" src="img/color.svg">
-                                            </button>
-                                            <button class="btn w-[48px] h-[48px] rounded bg-[#FFA011] text-white">
-                                                <img class="" src="img/trash-white.svg">
-                                            </button>
+                                        <div class="w-full flex justify-between item-center mt-4">
+                                            <p class="font-semibold">ASSEMBLY</p>
+                                            <p>$ 999,99</p>
                                         </div>
-                                        <button class="btn w-full h-[40px] rounded bg-[#FFA011] text-white mt-4">Save</button>
+                                        <div class="w-full flex justify-between item-center mt-4">
+                                            <p class="font-semibold">DISCOUNT</p>
+                                            <p>-$ 999,99</p>
+                                        </div>
+                                        <div class="border-t border-1 border-[#BDBDBD] mt-4"></div>
+                                            <div class="w-full flex justify-between item-center mt-4">
+                                                <p class="text-2xl text-[#333333] font-bold">Price:</p>
+                                                <p class="text-2xl text-[#333333] font-bold">$ 2222,00</p>
+                                            </div>
+                                            <div class="border-t border-1 border-[#BDBDBD] mt-4"></div>
+                                                <div class="w-full flex justify-between items-end gap-4 mt-4">
+                                                    <div class="w-full">
+                                                        <label for="regular-form-1" class="form-label font-bold text-[16px]">Add a discount</label>
+                                                        <input id="regular-form-1" type="text" class="form-control h-[48px] bg-[#F9F9F9]" placeholder="Input text" value="0">
+                                                    </div>
+                                                    <button class="btn w-[48px] h-[48px] rounded bg-[#FFA011] text-white">
+                                                        <img class="" src="img/color.svg">
+                                                    </button>
+                                                    <button class="btn w-[48px] h-[48px] rounded bg-[#FFA011] text-white">
+                                                        <img class="" src="img/trash-white.svg">
+                                                    </button>
+                                                </div>
+                                                <button class="btn w-full h-[40px] rounded bg-[#FFA011] text-white mt-4">Save</button>
+                                            </div>
+                                        </div>
+                                        <!-- PDF button -->
+                                        <div class="w-full">
+                                            <button class="btn w-full h-[40px] rounded bg-[#404040] text-white mt-4">View quote (PDF)</button>
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- PDF button -->
-                                <div class="w-full">
-                                    <button class="btn w-full h-[40px] rounded bg-[#404040] text-white mt-4">View quote (PDF)</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
     </body>
 </html>

@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-
-
-.font-rubik{
-  font-family: "Rubik";
-} 
 .window-active .window-border{
   border-width: 3px;
   border-radius: 6px;
