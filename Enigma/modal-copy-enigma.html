@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="dist/css/app.css" rel="stylesheet">
+        <title>DECCO</title>    
+    </head>
+    <body>
+        <div class="box w-auto sm:modal-copy sm:w-fit mx-auto shadow-md rounded-lg bg-white mt-12">
+            <div class="modal-header justify-between">
+                <p class="font-bold text-[24px]">Copy your product</p>
+                <img src="dist/img/multi.svg">
+            </div>
+            <p class="mt-4 px-5">Utwórz nowe okno na podstawie wybranego:</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 modal-body text-sm self-center justify-self-center my-6">
+                <div class="relative max-w-64">
+                    <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="relative">
+                            <img class="w-full" src="dist/img/window3.svg">
+                        </div>
+                        <p class="p-2 font-bold pb-11 ">Double-Hung</p>
+                    </div>
+                    <div class="check-mark justify-center items-center hidden absolute -right-[12px] -top-[12px] w-7 h-7 bg-blue-500 rounded-full border-full">
+                        <img class="w-full" src="dist/img/check.svg">
+                    </div>
+                </div>
+                <div class="window-active relative max-w-64 justify-self-end">
+                    <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="relative">
+                            <img class="w-full" src="dist/img/window8.svg">
+                        </div>
+                        <p class="p-2 font-bold pb-11 ">Single-Hung</p>
+                    </div>
+                    <div class="check-mark justify-center items-center hidden absolute -right-[12px] -top-[12px] w-7 h-7 bg-blue-500 rounded-full border-full">
+                        <img class="w-full" src="dist/img/check.svg">
+                    </div>
+                </div>
+                <div class="relative max-w-64">
+                    <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="relative">
+                            <img class="w-full" src="dist/img/window5.svg">
+                        </div>
+                        <p class="p-2 font-bold pb-11 ">Patior door</p>
+                    </div>
+                    <div class="check-mark justify-center items-center hidden absolute -right-[12px] -top-[12px] w-7 h-7 bg-blue-500 rounded-full border-full">
+                        <img class="w-full" src="dist/img/check.svg">
+                    </div>
+                </div>
+                <div class="relative max-w-64 justify-self-end">
+                    <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="relative">
+                            <img class="w-full" src="dist/img/window4.svg">
+                        </div>
+                        <p class="p-2 font-bold pb-11 ">Double Slide</p>
+                    </div>
+                    <div class="check-mark justify-center items-center hidden absolute -right-[12px] -top-[12px] w-7 h-7 bg-blue-500 rounded-full border-full">
+                        <img class="w-full" src="dist/img/check.svg">
+                    </div>
+                </div>
+                <div class="relative max-w-64">
+                    <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="relative">
+                            <img class="w-full" src="dist/img/window8.svg">
+                        </div>
+                        <p class="p-2 font-bold pb-11 ">Casement</p>
+                    </div>
+                    <div class="check-mark justify-center items-center hidden absolute -right-[12px] -top-[12px] w-7 h-7 bg-blue-500 rounded-full border-full">
+                        <img class="w-full" src="dist/img/check.svg">
+                    </div>
+                </div>
+                <div class="relative max-w-64 justify-self-end">
+                    <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="relative">
+                            <img class="w-full" src="dist/img/window2.svg">
+                        </div>
+                        <p class="p-2 font-bold pb-11 ">Awning</p>
+                    </div>
+                    <div class="check-mark justify-center items-center hidden absolute -right-[12px] -top-[12px] w-7 h-7 bg-blue-500 rounded-full border-full">
+                        <img class="w-full" src="dist/img/check.svg">
+                    </div>
+                </div>
+                <div class="relative max-w-64 ">
+                    <div class="window-border shadow-xl relative cursor-pointer">
+                        <div class="relative">
+                            <img class="w-full" src="dist/img/window3.svg">
+                        </div>
+                        <p class="p-2 font-bold pb-11 ">Picture Window</p>
+                    </div>
+                    <div class="check-mark justify-center items-center hidden absolute -right-[12px] -top-[12px] w-7 h-7 bg-blue-500 rounded-full border-full">
+                        <img class="w-full" src="dist/img/check.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-4 justify-end modal-footer">
+                <button class="btn w-1/2 sm:w-36 h-10 rounded">Cancel</button>
+                <button class="btn w-1/2 sm:w-36 h-10 rounded bg-primary text-white">Save</button>
+            </div>
+        </div>
+    </body>
+</html>

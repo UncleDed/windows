@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <link href="dist/css/app.css" rel="stylesheet">
+        <title>DECCO</title>    
+    </head>
+    <body class="">
+        <div class="mx-auto sm:modal-copy shadow-md rounded-lg bg-white">
+            <div class="flex justify-between modal-header">
+                <p class="font-bold text-[24px]">Additional costs</p>
+                <img src="dist/img/multi.svg">
+            </div>
+            <div class="sm:flex justify-start items-end gap-4 modal-body">
+                <div class="grid grid-cols-2 sm:flex justify-start items-end gap-3">
+                    <div class="grid grid-cols-1">
+                        <label for="name-reg-form" class="form-label font-semibold">Enter a Name</label>
+                        <input id="name-reg-form" type="text" class="w-full sm:w-44 h-[50px] border rounded-sm p-3" value="XYZ SPECIAL PROFILE">
+                    </div>
+                    <div class="grid grid-cols-1">
+                        <label for="price-reg-form" class="form-label font-semibold">Price</label>
+                        <input id="price-reg-form" type="text" class="w-full sm:w-32 h-[50px] border rounded-sm p-3" value="1000$">
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 mt-4 sm:flex sm:m-0  justify-start items-end gap-3">
+                    <div class="text-sm font-medium">
+                        <label class="form-label font-semibold text-[16px]">Currency</label>
+                        <div class="form-check mb-3">
+                            <input checked id="currency-checkbox" class="form-check-input" type="checkbox" value="">
+                            <label for="currency-checkbox" class="form-check-label">$</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="procent-checkbox" class="form-check-input" type="checkbox" value="">
+                            <label for="procent-checkbox" class="form-check-label">%</label>
+                        </div>
+                    </div>
+                    <div class="col-span-3">
+                        <label class="form-label font-semibold text-[16px]">Show As</label>
+                        <div class="flex items-center col-start-1 col-span-1 text-sm font-medium mb-3">
+                            <input checked id="add-checkbox" type="checkbox" value="" class="form-check-input">
+                            <label for="add-checkbox" class="form-check-label">Add to the price of each window</label>
+                        </div>
+                        <div class="flex items-center col-span-2 sm:col-span-1 text-sm font-medium">
+                            <input id="show-checkbox" type="checkbox" value="" class="form-check-input">
+                            <label for="show-checkbox" class="form-check-label">Show in offer</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="w-full sm:w-[150px] h-[48px] text-[14px] rounded bg-[#FFA011] text-white mt-4">Add special profile</button>
+            <div class="flex justify-end gap-4">
+                <button class="w-1/2 sm:w-[135px] h-[48px] rounded bg-[#404040] text-white mt-4">Cancel</button>
+                <button class="w-1/2 sm:w-[135px] h-[48px] rounded bg-[#FFA011] text-white mt-4">Save</button>
+            </div>
+        </div>
+    </body>
+</html>

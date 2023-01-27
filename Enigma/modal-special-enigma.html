@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <link rel="stylesheet" href="dist/css/app.css">
+        <title>DECCO</title>    
+    </head>
+    <body >
+        <div class="box w-auto sm:modal-copy mt-5 mx-auto shadow-md">
+            <div class="flex justify-between modal-header">
+                <p class="font-bold text-[24px]">Special profile</p>
+                <img src="dist/img/multi.svg" />
+            </div>
+            <div class="modal-body sm:flex justify-start items-end gap-4 mt-3">
+                <div class="grid grid-cols-2 gap-4 sm:flex">
+                    <div class="grid grid-cols-1">
+                        <label for="profile-input" class="font-semibold text-[16px]">Select a profile</label>
+                        <input id="profile-input" type="text" class="border rounded-sm h-12 sm:w-[189px] p-3 mt-2" value="XYZ SPECIAL PROFILE">
+                    </div>
+                    <div class="grid grid-cols-1">
+                        <label for="length-input" class="font-semibold text-[16px]">Length</label>
+                        <div class="flex gap-2">
+                            <input id="length-input" type="text" class="w-full sm:w-[81px] h-12 border rounded-sm p-3 mt-2" value="0">
+                            <select class=" w-full sm:w-14 border rounded-sm h-12 p-3 mt-2"aria-label="Default select example">
+                                <option>1/8</option>
+                                <option>1/4</option>
+                                <option>3/8</option>
+                                <option>1/8</option>
+                                <option>5/8</option>
+                                <option>3/4</option>
+                                <option>7/8</option>
+                            </select>
+                        </div>                            
+                    </div>
+                </div>  
+                <div class="gap-4 flex grid-cols-2">                  
+                    <div class="w-full">
+                        <label class="font-semibold text-[16px]">Color</label>
+                        <select class=" w-full sm:w-24 border rounded-sm h-12 p-3 mt-2" aria-label="Default select example">
+                            <option>White</option>
+                            <option>Black</option>
+                        </select>
+                    </div>
+                    <div class="flex w-[165px] justify-start sm:justify-between items-end gap-4 mb-2">
+                        <button class="btn w-9 h-9 text-primary text-xl">&minus;</button>
+                        <p class="font-bold text-lg mb-1 items-center">1</p>
+                        <button class="btn w-9 h-9 text-primary text-xl">&plus;</button>
+                        <button class="btn bg-primary w-9 h-9"><img  class="" src="dist/img/trash.svg"></button>
+                    </div>
+                </div>
+            </div>
+            <button class="w-[150px] h-[48px] text-[14px] rounded bg-[#FFA011] text-white mt-4">Add special profile</button>
+        </div>
+    </body>
+</html>
